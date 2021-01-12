@@ -21,6 +21,7 @@
         <li><a href="compra.php">Compras</a></li>
         <li><a href="users.php">Iniciar Sesion</a></li>
         <li><a href="contactanos.php">Contactános</a></li>
+        <li><a href="dom-empleados.php">Empleados</a></li>
         <li><a href="dom.php">Proveedores</a></li>
 
       </ul>
