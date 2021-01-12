@@ -33,6 +33,20 @@
 			</header>
 		</div>
 	</section>
+
+  <table style="width:100%" class="table">
+      <tr>
+        <td><img src="images/cigarros.jpeg" alt=""></td>
+        <td><img src="images/coca_3_lt.jpg" alt=""></td>
+        <td><img src="images/kinder.jpg" alt=""></td>
+
+      </tr>
+      <tr>
+        <th>Cigarros</th>
+        <th>Coca cola de 3 litros</th>
+        <th>Chocolate kinder</th>        
+      </tr>
+    </table>
 </body>
 
 </html>
