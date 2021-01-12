@@ -19,7 +19,6 @@
 
 	</head>
 	<body class="subpage">
-		  <?php include("./layouts/header.php"); ?>
 			<header id="header">
 				<div class="logo"><a href="index.php">Tiendita + App<span> Hanna Lizarraga</span></a></div>
 				<a href="#menu" class="menu">Menu</a>
