@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funciones en JS</title>
+</head>
+<body>
+	<h1>Sumadora</h1>
+	<form>
+		<label>Número 1</label>
+		<input type="number" name="n1" id=n1>
+		<br><br>
+		<label>Número 2</label>
+		<input type="number" name="n2" id=n2>
+		<br><br>
+		<input type="radio" name="operacion" id="op" value="1">Suma
+		<input type="radio" name="operacion" id="op" value="2">Resta
+		<input type="radio" name="operacion" id="op" value="3">Multiplicación
+		<input type="radio" name="operacion" id="op" value="4">División
+		<br><br>
+		<input type="button" onclick="sumar()" value="Calcular" id="calcular">
+	</form>
+	<script type="text/javascript">
+		/*function saludar(nombre){
+			alert('Hola '+nombre);
+		}
+		var nombre=prompt('Ingresa tu nombre');
+		saludar(nombre);
+		*/
+		function sumar(){
+			var r;
+      const rbs = document.querySelectorAll('input[name="operacion"]');
+
+            var selectedValue;
+
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+            }
+	  	if(document.getElementById("n1").value!=''&& document.getElementById("n2").value!='' && selectedValue!=null)
+  {
+    	var x=parseInt(document.getElementById("n1").value);
+			var y=parseInt(document.getElementById("n2").value);
+
+
+			switch(parseInt(selectedValue))
+			{
+				case 1:
+					r=x+y;
+					break;
+				case 2:
+					r=x-y;
+					break;
+				case 3:
+					r=x*y;
+					break;
+				case 4:
+					r=x/y;
+					break;
+			}
+			alert('El resultado es '+r);
+		}
+    else {
+      alert('Debes ingresar los valores');
+    }
+  }
+
+	</script>
+
+</body>
+</html>

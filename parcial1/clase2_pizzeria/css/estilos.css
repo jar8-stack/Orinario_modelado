@@ -1,0 +1,80 @@
+#titulo
+{
+  font-family:Century Gothic;
+  background-color: #F7BA21;
+  color: #FFFFFF;
+  text-align: center;
+}
+body
+{
+  background-image: url("../images/fondo2.png");
+  font-family:Century Gothic;
+  color: #FFFFFF;
+
+}
+nav
+{
+  font-family:Century Gothic;
+  background-color: #F7BA21;
+  height: 50px;
+  padding: 10px;
+  text-align: end;
+}
+
+nav ul {
+  height: fit-content;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 15px;
+}
+
+nav ul li
+{
+  display: inline; /*para que nos muestre en horizontal las opciones*/
+  margin: 0px 15px;
+}
+nav a:link, nav a: visited /*para quitar el subrayado*/
+{
+  text-decoration: none;
+}
+
+nav ul li:not(.logo-container) {
+  padding-top: 15px;
+  height: 50px;
+}
+
+.logo-container img {
+  float: left;
+  position: absolute;
+  left: 10px;
+  top: -3px;
+}
+p,i
+{
+  font-family:Century Gothic;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+}
+cite
+{
+  font-family:Century Gothic;
+  color: #FFFFFF;
+  font-size: 15px;
+  text-align: center;
+}
+.display-flex {
+  display: flex;
+}
+.family-pack {
+  padding-left: 20px;
+}
+table {
+   border-collapse: separate;
+   border-spacing: 8px;
+   color: #fff;
+}
+td, th {
+   background: #F7BA21;
+   color: #353535;
+}

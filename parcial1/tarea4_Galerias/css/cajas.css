@@ -1,0 +1,28 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+.main
+{
+  background: #052147;
+  color: #ffff;
+  width: 65%;
+  padding: 20px;
+  margin-right: : 10px;
+  margin-bottom: 10px;
+  float: left;
+  border: 10px solid #bbbbbb;
+  box-sizing: border-box;
+}
+
+.aside
+{
+  background: #cccccc;
+  color: #000;
+  width: 30%;
+  margin: 10px;
+  float: left;
+  padding: 20px;
+
+}

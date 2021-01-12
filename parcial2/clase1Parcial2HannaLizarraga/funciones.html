@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <title>Funciones chirimole</title>
+   </head>
+   <body>
+     <h1>Sumadora</h1>
+     <form>
+       <label for="">Numero 1</label>
+       <input type="number" name="n1" id="n1">
+       <br>
+       <label for="">Numero 2</label>
+       <input type="number" name="n2" id="n2">
+       <br><br>
+       <input type="radio" name="operacion" id="op" value="1"> Suma
+       <input type="radio" name="operacion" id="op" value="2"> Resta
+       <input type="radio" name="operacion" id="op" value="3"> Multiplicacion
+       <input type="radio" name="operacion" id="op" value="4"> Division
+       <input type="button" onclick="sumar();" id="op" value="Calcular" id="calcular">
+
+
+     </form>
+     <script type="text/javascript">
+       function sumar()
+       {
+         var r;
+         var op=parseInt(document.getElementById("op")).value;
+         var x=parseInt(document.getElementById("n1")).value;
+         var y=pasrseInt(document.getElementById("n2")).value;
+         switch (op) {
+           case 1:
+             r=x+y;
+             break;
+           case 2:
+             r=x-y;
+             break;
+           case 3:
+             r=x*y;
+             break;
+           case 4:
+              r=x/y;
+              break;
+           default:
+
+         }
+         var suma= x+y;
+         alert('La suma es' + suma) ;
+
+       }
+      /*function saludar(nombre)
+       {
+         alert('Hola' + nombre);
+       }
+       var nombre=prompt('Ingresa tu nombre: ')
+       saludar('Flerky');
+
+       function sumar(a,b)
+       {
+         var suma;
+         suma=a+b;
+         return suma;
+       }*/
+
+      /* var x,y;
+       x=parseInt(prompt('Ingresa un numero:'));
+       y=parseInt(prompt('Ingresa otro numero:'));
+       var r=sumar(5,8);
+       alert('La suma es'+ r);*/
+    </script>
+  </body>
+ </html>
