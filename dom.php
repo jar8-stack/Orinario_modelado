@@ -42,20 +42,76 @@
 								<p>Proveedores</p>
 							</header>
 							<h2>Insertar Proveedores</h2>
-							<form>
-	 			       <input type="text" name="position" id="position" placeholder="Posición">
-							 <input type="text" name="subject" id="subject" placeholder="Ingresa tu destino">
+							<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+							 <input type="text" name="id_proveedor" id="id_proveedor" placeholder="Id delproveedor">
+ 							 <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa nombre del proveedor">
+ 							 <input type="number" name="Telefono" id="Telefono" placeholder="Ingresa telefono del proveedor">
+ 							 <input type="number" name="Sucursal" id="Sucursal" placeholder="Ingresa el numero del proveedor">
 							 <br>
-	 			       <input type="button" name="agregar" id="agregar" value="Agregar">
+	 			       <input type="submit" name="agregar" id="agregar" value="Agregar">
 	 			       <input type="button" name="editar" id="editar" value="Editar">
 							 <input type="button" name="eliminar" id="eliminar" value="Eliminar">
 	 			     </form>
-	 			     <ol id="lista">
-	 			       <li>Abelardo Ramirez Fuente</li>
-	 			       <li>Hanna Romero Solano</li>
-	 			       <li>Jade Bañuelos Gomez</li>
-	 			     </ol>
-	 			     <script type="text/javascript" src="js/dom.js"></script>
+
+						 <?php
+						 /*
+						 		if (isset($_POST['agregar'])) {
+									$Nombre= $_POST['Nombre'];
+									$Telefono=$_POST['Telefono'];
+									$Sucursal=$_POST['Sucursal'];
+
+
+									$url= 'http://localhost:3000/Proveedor';
+
+									$ch = curl_init($url.'/'.$Sucursal);
+
+									$data= array(
+										'Nombre' => "'.$Nombre.'",
+										'Telefono' => "'$Telefono'"
+									);
+
+									$payload = json_encode(array("Proveedor" => $data));
+
+									// Attach encoded JSON string to the POST fields
+									curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+
+									// Set the content type to application/json
+									curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+
+									// Return response instead of outputting
+									curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+									// Execute the POST request
+									$result = curl_exec($ch);
+
+									// Close cURL resource
+									curl_close($ch);
+
+								}
+								*/
+
+						  ?>
+
+							<?php
+								$api_url_proveedores= "http://localhost:3000/Proveedor";
+
+								$json_data_proveedores= file_get_contents($api_url_proveedores);
+
+								$response_data_proveedores= json_decode($json_data_proveedores);
+
+								//$product_data= $response_data_products->data;
+
+								foreach ($response_data_proveedores as $proveedor) {
+									echo "<ol>";
+									echo "<li>";
+									echo "".$proveedor->Nombre;
+									echo "</li>";
+									echo "<li>";
+									echo "".$proveedor->Contacto;
+									echo "</li>";
+									echo "</ol>";
+								}
+							 ?>	 			     
 
 						</div>
 					</div>

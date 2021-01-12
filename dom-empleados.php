@@ -50,11 +50,22 @@
 	 			       <input type="button" name="editar" id="editar" value="Editar">
 							 <input type="button" name="eliminar" id="eliminar" value="Eliminar">
 	 			     </form>
-	 			     <ol id="lista">
-	 			       <li>Jorge Said Serrano Soto</li>
-							 <li>Carlos Ivan Aguero Perez</li>
-	 			     </ol>
-	 			     <script type="text/javascript" src="js/dom.js"></script>
+						 <?php
+							 $api_url_empleado= "http://localhost:3000/Empleado";
+
+							 $json_data_empleado= file_get_contents($api_url_empleado);
+
+							 $response_data_empledo= json_decode($json_data_empleado);
+
+							 //$product_data= $response_data_products->data;
+
+							 foreach ($response_data_empledo as $empleado) {
+								 echo "<ol>";
+								 echo "<li>";
+								 echo "".$empleado->Salario;
+								 echo "</li>";
+							 }
+							?>
 
 						</div>
 					</div>
