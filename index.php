@@ -10,7 +10,7 @@
   </head>
   <body>
     <header id="header" class="alt">
-      <div class="logo"><a href="https://www.westjet.com/es-mx/book-trip/flights">Tiendita + App <span>Hanna Lizarraga</span></a></div>
+      <div class="logo"><a href="index.php">Tiendita + App <span>Hanna Lizarraga</span></a></div>
       <a href="#menu"class="menu">Menu</a>
     </header>
     <nav id="menu">
