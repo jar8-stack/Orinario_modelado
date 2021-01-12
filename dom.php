@@ -50,45 +50,62 @@
 							 <br>
 	 			       <input type="submit" name="agregar" id="agregar" value="Agregar">
 	 			       <input type="button" name="editar" id="editar" value="Editar">
-							 <input type="button" name="eliminar" id="eliminar" value="Eliminar">
+							 <input type="submit" name="eliminar" id="eliminar" value="Eliminar">
 	 			     </form>
 
 						 <?php
-						 /*
+						 	if(isset($_POST['eliminar'])){
+
+								$id_proveedor= $_POST['id_proveedor'];
+
+								$ch = curl_init('http://localhost:3000/Proveedor/'.$id_proveedor);
+								curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
+								curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+									)
+								);
+								$result = curl_exec($ch);
+								echo $id_proveedor;
+							}
+
+
+								/*
 						 		if (isset($_POST['agregar'])) {
 									$Nombre= $_POST['Nombre'];
 									$Telefono=$_POST['Telefono'];
 									$Sucursal=$_POST['Sucursal'];
 
 
-									$url= 'http://localhost:3000/Proveedor';
+									$url= 'http://localhost:3000/Proveedor'.'/'.$Sucursal;
 
-									$ch = curl_init($url.'/'.$Sucursal);
 
-									$data= array(
-										'Nombre' => "'.$Nombre.'",
-										'Telefono' => "'$Telefono'"
+
+									$data_array= array(
+										'Nombre' => ''.$Nombre,
+										'Telefono' => ''.$Telefono
 									);
 
-									$payload = json_encode(array("Proveedor" => $data));
 
-									// Attach encoded JSON string to the POST fields
-									curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
 
-									// Set the content type to application/json
-									curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
 
-									// Return response instead of outputting
+									$data= http_build_query($data_array);
+
+
+									$ch= curl_init();
+
+									curl_setopt($ch, CURLOPT_URL, $url);
+									curl_setopt($ch, CURLOPT_POST, true);
+									curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 									curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-									// Execute the POST request
-									$result = curl_exec($ch);
+									$resp= curl_exec($ch);
 
-									// Close cURL resource
-									curl_close($ch);
+									*/
+
+
+
 
 								}
-								*/
+
 
 						  ?>
 
@@ -111,7 +128,7 @@
 									echo "</li>";
 									echo "</ol>";
 								}
-							 ?>	 			     
+							 ?>
 
 						</div>
 					</div>
