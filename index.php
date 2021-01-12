@@ -88,41 +88,23 @@
             <a href="#"><img src="images/ch2.png" alt=""></a>
           </div>
           <div class="pelicula">
-            <a href="#"><img src="images/ch1.png" alt=""></a>
+            <a href="#"><img src="images/ch1.jpg" alt=""></a>
           </div>
           <div class="pelicula">
-            <a href="#"><img src="images/ld2.png" alt=""></a>
+            <a href="#"><img src="images/ld2.jpg" alt=""></a>
           </div>
           <div class="pelicula">
-            <a href="#"><img src="images/sg1.png" alt=""></a>
+            <a href="#"><img src="images/sg1.jpg" alt=""></a>
           </div>
           <div class="pelicula">
-            <a href="#"><img src="images/sk1.png" alt=""></a>
+            <a href="#"><img src="images/sk1.jpg" alt=""></a>
           </div>
           <div class="pelicula">
-            <a href="#"><img src="images/sk3.png" alt=""></a>
+            <a href="#"><img src="images/sk3.jpg" alt=""></a>
           </div>
           <div class="pelicula">
-            <a href="#"><img src="images/tl1.png" alt=""></a>
-          </div>
-          <div class="pelicula">
-            <a href="#"><img src="images/tl2.png" alt=""></a>
-          </div>
-          <div class="pelicula">
-            <a href="#"><img src="images/ld1.png" alt=""></a>
-          </div>
-          <div class="pelicula">
-            <a href="#"><img src="images/tl3.png" alt=""></a>
-          </div>
-          <div class="pelicula">
-            <a href="#"><img src="images/vc1.png" alt=""></a>
-          </div>
-          <div class="pelicula">
-            <a href="#"><img src="images/vc2.png" alt=""></a>
-          </div>
-          <div class="pelicula">
-            <a href="#"><img src="images/vc3.png" alt=""></a>
-          </div>
+            <a href="#"><img src="images/tl1.jpeg" alt=""></a>
+          </div>      
       </div>
 
       <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
