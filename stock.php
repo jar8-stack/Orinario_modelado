@@ -55,7 +55,7 @@
 							<a href="parcial1.php"> <img src="images/fruta.png" /></a>
 						</div>
 						<div class="col-lg-4 col-md-6 col-12">
-							<a href="parcial2.php"> <img src="images/abarrote.png" /></a>
+							<a href="stock_listo.php"> <img src="images/abarrote.png" /></a>
 						</div>
 						<div class="col-lg-4 col-md-6 col-12">
 							<a href="parcial3.php"> <img src="images/bebida.png" /></a>
